@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FloraChroma - Flower Color Theme Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌸 FloraChroma</h1>
+            <p class="tagline">Design beautiful flower arrangements with color theory</p>
+        </header>
+
+        <main>
+            <!-- Color Picker Section -->
+            <div class="section picker-section">
+                <h2>1. Choose Your Base Color</h2>
+                <div class="color-picker-wrapper">
+                    <input type="color" id="base-color" value="#e91e63">
+                    <div class="color-info">
+                        <span id="color-hex">#E91E63</span>
+                        <span id="color-name">Pink</span>
+                    </div>
+                </div>
+                <p class="hint">Pick a color or select from popular flower colors below</p>
+                
+                <div class="preset-colors">
+                    <button class="preset-color" style="background:#e91e63" data-color="#e91e63" title="Rose Pink">🌹</button>
+                    <button class="preset-color" style="background:#f44336" data-color="#f44336" title="Red">🌺</button>
+                    <button class="preset-color" style="background:#ff9800" data-color="#ff9800" title="Orange">🧡</button>
+                    <button class="preset-color" style="background:#ffeb3b" data-color="#ffeb3b" title="Yellow">🌻</button>
+                    <button class="preset-color" style="background:#9c27b0" data-color="#9c27b0" title="Purple">💜</button>
+                    <button class="preset-color" style="background:#3f51b5" data-color="#3f51b5" title="Blue">💙</button>
+                    <button class="preset-color" style="background:#4caf50" data-color="#4caf50" title="Green">🌿</button>
+                    <button class="preset-color" style="background:#ffffff" data-color="#ffffff" title="White">🤍</button>
+                    <button class="preset-color" style="background:#f8bbd9" data-color="#f8bbd9" title="Blush">🌸</button>
+                    <button class="preset-color" style="background:#ce93d8" data-color="#ce93d8" title="Lavender">💐</button>
+                </div>
+            </div>
+
+            <!-- Harmony Section -->
+            <div class="section harmony-section">
+                <h2>2. Color Harmonies</h2>
+                <div class="harmony-tabs">
+                    <button class="harmony-tab active" data-harmony="complementary">Complementary</button>
+                    <button class="harmony-tab" data-harmony="analogous">Analogous</button>
+                    <button class="harmony-tab" data-harmony="triadic">Triadic</button>
+                    <button class="harmony-tab" data-harmony="split">Split-Complementary</button>
+                    <button class="harmony-tab" data-harmony="monochromatic">Monochromatic</button>
+                </div>
+                
+                <div class="harmony-display">
+                    <div class="harmony-description" id="harmony-description">
+                        <!-- Description will be inserted here -->
+                    </div>
+                    <div class="color-palette" id="color-palette">
+                        <!-- Colors will be inserted here -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flower Suggestions -->
+            <div class="section suggestions-section">
+                <h2>3. Suggested Flowers</h2>
+                <div class="flower-grid" id="flower-suggestions">
+                    <!-- Suggestions will be inserted here -->
+                </div>
+            </div>
+
+            <!-- Arrangement Preview -->
+            <div class="section preview-section">
+                <h2>4. Arrangement Preview</h2>
+                <div class="arrangement-canvas" id="arrangement-canvas">
+                    <div class="vase">
+                        <div class="flowers" id="flower-preview">
+                            <!-- Flower shapes will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                <div class="arrangement-controls">
+                    <button id="randomize-btn" class="control-btn">🔀 Randomize</button>
+                    <button id="save-btn" class="control-btn primary">💾 Save Palette</button>
+                </div>
+            </div>
+
+            <!-- Saved Palettes -->
+            <div class="section saved-section">
+                <h2>💾 Saved Palettes</h2>
+                <div class="saved-palettes" id="saved-palettes">
+                    <p class="empty-state">No saved palettes yet</p>
+                </div>
+            </div>
+
+            <!-- Color Theory Tips -->
+            <div class="section tips-section">
+                <h2>📚 Color Theory Tips</h2>
+                <div class="tips-grid">
+                    <div class="tip-card">
+                        <h3>🔵 Cool Colors</h3>
+                        <p>Blues, purples, and greens create calm, elegant arrangements. Great for sympathy or formal events.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🔴 Warm Colors</h3>
+                        <p>Reds, oranges, and yellows bring energy and excitement. Perfect for celebrations and romantic occasions.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>⚖️ Balance</h3>
+                        <p>Use 60% dominant color, 30% secondary, and 10% accent for balanced arrangements.</p>
+                    </div>
+                    <div class="tip-card">
+                        <h3>🌿 Greenery</h3>
+                        <p>Green foliage is neutral and helps bridge colors. Use it to soften transitions between hues.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Design with confidence 🌷</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
