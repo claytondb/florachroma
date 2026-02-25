@@ -1,0 +1,21 @@
+{
+  "name": "FloraChroma",
+  "short_name": "FloraChroma",
+  "description": "Flower color theme assistant - Design beautiful arrangements with color theory",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#fdf6f0",
+  "theme_color": "#e88b8b",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "categories": ["lifestyle", "design"],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

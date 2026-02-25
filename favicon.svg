@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fdf6f0"/>
+      <stop offset="100%" style="stop-color:#fce4e4"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  
+  <!-- Main flower (pink rose) -->
+  <circle cx="32" cy="28" r="14" fill="#e88b8b"/>
+  <circle cx="32" cy="28" r="10" fill="#f4a5a5"/>
+  <circle cx="32" cy="28" r="6" fill="#f9c4c4"/>
+  <circle cx="32" cy="28" r="3" fill="#ffeb3b"/>
+  
+  <!-- Petals around main flower -->
+  <ellipse cx="22" cy="22" rx="6" ry="8" fill="#e88b8b" transform="rotate(-30 22 22)"/>
+  <ellipse cx="42" cy="22" rx="6" ry="8" fill="#e88b8b" transform="rotate(30 42 22)"/>
+  <ellipse cx="24" cy="36" rx="6" ry="8" fill="#e88b8b" transform="rotate(-60 24 36)"/>
+  <ellipse cx="40" cy="36" rx="6" ry="8" fill="#e88b8b" transform="rotate(60 40 36)"/>
+  
+  <!-- Small accent flowers -->
+  <circle cx="14" cy="48" r="6" fill="#9b59b6" opacity="0.8"/>
+  <circle cx="14" cy="48" r="3" fill="#ffeb3b"/>
+  
+  <circle cx="50" cy="50" r="5" fill="#4ecdc4" opacity="0.8"/>
+  <circle cx="50" cy="50" r="2.5" fill="#ffeb3b"/>
+  
+  <!-- Leaves -->
+  <ellipse cx="28" cy="52" rx="8" ry="4" fill="#27ae60" transform="rotate(-20 28 52)"/>
+  <ellipse cx="38" cy="54" rx="7" ry="3" fill="#2ecc71" transform="rotate(15 38 54)"/>
+  
+  <!-- Color wheel hint -->
+  <path d="M54 12 A6 6 0 0 1 54 24" fill="none" stroke="#e74c3c" stroke-width="3"/>
+  <path d="M54 12 A6 6 0 0 0 60 18" fill="none" stroke="#f1c40f" stroke-width="3"/>
+  <path d="M60 18 A6 6 0 0 0 54 24" fill="none" stroke="#3498db" stroke-width="3"/>
+</svg>
